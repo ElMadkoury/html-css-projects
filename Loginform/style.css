@@ -1,4 +1,4 @@
-body{
+body {
     background-color: var(--main-Color);
     height: 742px;
     font-family: Helvetica;
@@ -6,34 +6,40 @@ body{
     justify-content: center;
     align-items: center;
 }
-:root{
-    --main-Color:#427D9D;
-    --second-Color:#164863;
+
+:root {
+    --main-Color: #427D9D;
+    --second-Color: #164863;
+    --white-color: #fff;
 }
-.container{
+
+.container {
     display: flex;
     flex-flow: column nowrap;
     width: 300px;
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--white-color);
 }
-form{
+
+form {
     display: flex;
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 20px;
     padding-bottom: 0;
 }
-.logo{
-    color: white;
+
+.logo {
+    color: var(--white-color);
     background-color: var(--second-Color);
     padding: 18px 30px;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
-    border-radius: 5px 5px 0 0 ;
+    border-radius: 5px 5px 0 0;
 }
-input{
+
+input {
     padding: 8px 0 8px 25px;
     margin-bottom: 2%;
     outline: none;
@@ -41,35 +47,48 @@ input{
     border: solid 1px rgb(200, 200, 200);
     font-size: 16px;
 }
-.forpass{
+
+.forpass {
     color: var(--main-Color);
     margin: 5px 0;
     font-weight: 500;
     cursor: pointer;
+    transition: color 150ms;
 }
-.forpass:hover{
+
+.forpass:hover {
     color: var(--second-Color);
 }
-button{
+
+button {
     border: none;
     border-radius: 4px;
     background-color: var(--main-Color);
     font-size: 18px;
     padding: 8px;
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
     margin: 10px 0 0 0;
     font-weight: 600;
     transition: opacity 0.15s;
 }
-button:hover{
+
+button:hover {
     opacity: 0.9;
 }
-.signup{
+
+.signup {
     text-align: center;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
-.signup span{
-    color:var(--main-Color);
+
+.signup span {
+    color: var(--main-Color);
     margin: 0 5px;
+    cursor: pointer;
+    transition: color 150ms;
+}
+
+.signup span:hover {
+    color: var(--second-Color);
 }
