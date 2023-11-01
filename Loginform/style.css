@@ -1,10 +1,14 @@
 body{
-    background-color: #427D9D;
+    background-color: var(--main-Color);
     height: 742px;
     font-family: Helvetica;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+:root{
+    --main-Color:#427D9D;
+    --second-Color:#164863;
 }
 .container{
     display: flex;
@@ -22,7 +26,7 @@ form{
 }
 .logo{
     color: white;
-    background-color: #164863;
+    background-color: var(--second-Color);
     padding: 18px 30px;
     text-align: center;
     font-size: 24px;
@@ -33,35 +37,39 @@ input{
     padding: 8px 0 8px 25px;
     margin-bottom: 2%;
     outline: none;
-    color: #164863;
+    color: var(--second-Color);
     border: solid 1px rgb(200, 200, 200);
     font-size: 16px;
 }
 .forpass{
-    color: #427D9D;
+    color: var(--main-Color);
     margin: 5px 0;
     font-weight: 500;
     cursor: pointer;
 }
 .forpass:hover{
-    color: #164863;
+    color: var(--second-Color);
 }
 button{
     border: none;
     border-radius: 4px;
-    background-color: #427D9D;
+    background-color: var(--main-Color);
     font-size: 18px;
     padding: 8px;
     color: white;
     cursor: pointer;
     margin: 10px 0 0 0;
     font-weight: 600;
+    transition: opacity 0.15s;
+}
+button:hover{
+    opacity: 0.9;
 }
 .signup{
     text-align: center;
     margin: 20px 0 ;
 }
 .signup span{
-    color: #427D9D;
+    color:var(--main-Color);
     margin: 0 5px;
 }
