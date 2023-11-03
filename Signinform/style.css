@@ -1,0 +1,41 @@
+body{
+    background-color: var(--backgroundColor);
+    height: 740px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --backgroundColor:rgb(243 224 226) ;
+}
+.container{
+    display: flex;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),-5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    height: 400px;
+}
+.container .image-slide{
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image-slide .logo{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding:10px ;
+
+}
+.image-slide .subtitle {
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+}
