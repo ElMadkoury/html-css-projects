@@ -39,23 +39,31 @@ form {
     border-radius: 5px 5px 0 0;
 }
 
-input {
+.input-container {
+    display: flex;
     position: relative;
-    padding: 8px 0 8px 25px;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px 0 8px 40px;
     outline: none;
     color: var(--second-Color);
     border: solid 1px rgb(200, 200, 200);
+    border-radius: 4px;
     font-size: 16px;
+    
 }
-i{
-    position: relative;
-    top: 25px;
+
+i {
     z-index: 1;
-    left: 5px;
-    color: var(--second-Color);
-    width: fit-content;
+    position: absolute;
+    color: var(--white-color);
+    background: var(--second-Color);
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
 }
+
 .forpass {
     color: var(--main-Color);
     margin: 5px 0;
