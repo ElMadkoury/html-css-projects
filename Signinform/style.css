@@ -93,7 +93,10 @@ form .forgpass{
     font-size: 14px;
     font-weight: 200;
     cursor: pointer;
-
+    transition: color 0.20s;
+}
+form .forgpass:hover{
+    color: crimson;
 }
 form button{
     padding: 15px 60px;
@@ -105,4 +108,9 @@ form button{
     border-radius: 25px;
     cursor: pointer;
     margin-top: 20px;
+    transition: opacity 0.20s;
+
+}
+form button:hover{
+    opacity: 0.8;
 }
