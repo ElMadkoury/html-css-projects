@@ -3,3 +3,57 @@
     margin: 0;
     font-family: sans-serif;
 }
+.countainer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 666px !important;
+}
+.result{
+    width: 100%;
+    height: 39%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.result span{
+    align-self: flex-end;
+    font-size: 64px;
+    padding: 10px;
+}
+.numbers{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%; 
+    height: 60%;
+    justify-items: center;
+}
+.numbers div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    height: 72px;
+    width: 72px;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 1%;
+}
+.numbers .left{
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+.numbers .right{
+    background-color: rgb(255, 173, 19);
+}
+.numbers .num{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.numbers .num-zero{
+    grid-column: 1 / 3;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
+    border-radius: 25px;
+    width: 80%;
+}
