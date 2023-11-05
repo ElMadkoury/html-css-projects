@@ -9,10 +9,10 @@ body {
 }
 
 .container {
-    height: 1000px;
+    height: 1720px;
     display: grid;
     grid-template-columns: repeat(10, calc(100%/10));
-    grid-template-rows: 20% auto 10%;
+    grid-template-rows: 10% auto 10%;
     grid-template-areas: "header header header header header header header header header header"
         "main main main main main main main main main main"
         "footer footer footer footer footer footer footer footer footer footer";
@@ -21,19 +21,37 @@ body {
 
 header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(10, calc(100%/10));
+    grid-template-rows: 5% auto;
+    grid-template-areas: "subHead subHead subHead subHead subHead subHead subHead subHead subHead subHead"
+        "mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead";
+}
+
+.subHead {
+    grid-area: subHead;
+}
+
+.main-header {
+    grid-area: mHead;
 }
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(10, calc(100%/10));
+    grid-template-rows: 50% 20% 30%;
+    grid-template-areas: ". img img img img img img img img ."
+        "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1"
+        "sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2";
 }
 
 main img {
-    grid-area: mainImg;
-    width: 100px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
+    grid-area: img;
 }
 
-.main img {
-    width: 10%;
-    height: 5%;
+footer {
+    grid-area: footer;
 }
