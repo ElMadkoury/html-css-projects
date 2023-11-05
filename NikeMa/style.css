@@ -51,7 +51,21 @@ main img {
     height: 100%;
     grid-area: img;
 }
-
+.sec1{
+    grid-row: sec1;
+}
+.sec2{
+    grid-area: sec2;
+}
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(10, calc(100%/10));
+    grid-template-areas: "mFooter mFooter mFooter mFooter mFooter icons icons icons icons icons";
+}
+.main-footer{
+    grid-area: mFooter;
+}
+.icons{
+    grid-area: icons;
 }
