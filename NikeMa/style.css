@@ -8,7 +8,7 @@
 body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* I split the page by 10 columns i see that is he best */
 .container {
     height: 1720px;
     display: grid;
