@@ -68,30 +68,35 @@ header {
     grid-template-rows: 100%;
     grid-template-areas: "logo title title title title title title title title title ";
 }
-.space{
+
+.space {
     grid-area: space;
     background-color: #EEE;
     height: 100%;
     width: 100%;
 }
-.logo{
+
+.logo {
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .logo img {
     height: 100%;
     text-align: center;
 }
-.title{
+
+.title {
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:75px ;
+    margin-right: 75px;
 }
-.title div{
+
+.title div {
     height: max-content;
     font-size: 17px;
     align-self: center;
@@ -99,9 +104,11 @@ header {
     font-weight: 500;
     margin: auto 1%;
 }
-.title div:hover{
+
+.title div:hover {
     border-bottom: 2px solid black;
 }
+
 main {
     grid-area: main;
     display: grid;
@@ -110,12 +117,14 @@ main {
     grid-template-areas: ". img img img img img img img img ."
         "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1"
         "sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2";
-    }
+}
+
 main img {
     width: 100%;
     height: 100%;
     grid-area: img;
 }
+
 .sec1 {
     grid-row: sec1;
 }
