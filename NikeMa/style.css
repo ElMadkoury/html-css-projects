@@ -23,19 +23,85 @@ header {
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(10, calc(100%/10));
-    grid-template-rows: 5% auto;
+    grid-template-rows: 20% 40% 40%;
     grid-template-areas: "subHead subHead subHead subHead subHead subHead subHead subHead subHead subHead"
-        "mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead";
+        "mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead"
+        "space space space space space space space space space space";
 }
 
 .subHead {
     grid-area: subHead;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #EEE;
+    height: 100%;
+    padding-right: 5%;
+}
+
+.subHead a {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 1%;
+    cursor: pointer;
+    transition: opactity 150ms;
+    color: rgb(30, 30, 30);
+}
+
+.subHead a:hover {
+    opacity: 0.6;
+}
+
+.subHead span {
+    background-color: rgb(30, 30, 30);
+    height: 40%;
+    width: 2px;
+    vertical-align: baseline;
+    border-radius: 5px;
+
 }
 
 .main-header {
     grid-area: mHead;
+    display: grid;
+    grid-template-columns: repeat(10, calc(100%/10));
+    grid-template-rows: 100%;
+    grid-template-areas: "logo title title title title title title title title title ";
 }
-
+.space{
+    grid-area: space;
+    background-color: #EEE;
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 100%;
+    text-align: center;
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:75px ;
+}
+.title div{
+    height: max-content;
+    font-size: 17px;
+    align-self: center;
+    padding: 1.8%;
+    font-weight: 500;
+    margin: auto 1%;
+}
+.title div:hover{
+    border-bottom: 2px solid black;
+}
 main {
     grid-area: main;
     display: grid;
@@ -44,28 +110,31 @@ main {
     grid-template-areas: ". img img img img img img img img ."
         "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1"
         "sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2";
-}
-
+    }
 main img {
     width: 100%;
     height: 100%;
     grid-area: img;
 }
-.sec1{
+.sec1 {
     grid-row: sec1;
 }
-.sec2{
+
+.sec2 {
     grid-area: sec2;
 }
+
 footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: repeat(10, calc(100%/10));
     grid-template-areas: "mFooter mFooter mFooter mFooter mFooter icons icons icons icons icons";
 }
-.main-footer{
+
+.main-footer {
     grid-area: mFooter;
 }
-.icons{
+
+.icons {
     grid-area: icons;
 }
