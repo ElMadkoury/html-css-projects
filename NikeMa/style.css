@@ -29,9 +29,6 @@ header {
         "mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead mHead"
         "space space space space space space space space space space space space";
 }
-
-
-
 .subHead {
     grid-area: subHead;
     display: flex;
