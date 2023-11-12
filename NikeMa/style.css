@@ -30,6 +30,8 @@ header {
         "space space space space space space space space space space space space";
 }
 
+
+
 .subHead {
     grid-area: subHead;
     display: flex;
